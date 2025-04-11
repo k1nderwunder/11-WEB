@@ -9,11 +9,11 @@ app = FastAPI()
 security = HTTPBearer()
 
 # Конфигурация JWT
-SECRET_KEY = "your-secret-key-here"  # В продакшене используйте надёжный ключ!
+SECRET_KEY = "secret-key"  
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
-# Фиксированные тестовые пользователи (для стабильного тестирования)
+# Фиксированные тестовые пользователи 
 TEST_USERS = {
     "john_doe": "securepassword123",
     "alice": "wonderland"
